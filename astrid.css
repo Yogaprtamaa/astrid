@@ -1,0 +1,139 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f8fa;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #4a90e2;
+    color: white;
+}
+
+.profile-image {
+    width: 200px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 10px;
+    
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Section styling */
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    /* Adjust header styles */
+    header {
+        padding: 30px 0;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    /* Stack navigation items vertically */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    /* Section heading size adjustments */
+    .section h2 {
+        font-size: 24px;
+    }
+
+    /* Adjust padding in sections for smaller screens */
+    .section {
+        padding: 30px 10px;
+    }
+
+    /* Footer font-size adjustments */
+    footer {
+        font-size: 12px;
+    }
+}
